@@ -1,0 +1,105 @@
+:root {
+  --ink: #123866;
+  --muted: #5d718a;
+  --paper: #eef5fc;
+  --cream: #ffffff;
+  --line: #c6d8eb;
+  --navy: #153f73;
+  --lime: #d8eaff;
+  --coral: #2878d2;
+  --sky: #cbe5ff;
+  --shadow: 0 20px 60px rgba(35, 86, 142, .13);
+}
+body {
+  background: radial-gradient(circle at 15% 2%, rgba(83, 154, 230, .18), transparent 24rem), linear-gradient(180deg, #ffffff 0%, var(--paper) 100%);
+}
+.topbar-center, .outline-button { font-size: 14px; }
+.privacy-label { font-size: 13px; }
+.eyebrow { font-size: 13px; }
+.hero h1 { font-size: clamp(52px, 6.35vw, 84px); }
+.hero-subtitle { max-width: 760px; font-size: 20px; line-height: 1.75; }
+.hero-points { font-size: 14px; }
+.hero-note > p { font-size: 12px; }
+.hero-note strong { font-size: 27px; }
+.hero-note small { font-size: 13px; }
+.scribble { font-size: 19px; }
+.task-card strong { font-size: 17px; }
+.task-card small { font-size: 13px; }
+.task-icon { font-size: 20px; }
+.panel-kicker { font-size: 12px; }
+.context-panel h2 { font-size: 31px; }
+.panel-desc { font-size: 15px; }
+.field-grid label { font-size: 13px; }
+.field-grid select { font-size: 16px; }
+.scope-ticket span { font-size: 12px; }
+.scope-ticket strong { font-size: 20px; }
+.scope-ticket small { font-size: 12px; }
+.course-tags p { font-size: 12px; }
+.course-tags span { font-size: 11px; padding: 6px 9px; }
+.generator-panel h2 { font-size: clamp(32px, 3.2vw, 43px); }
+.step-badge { font-size: 13px; }
+.topic-input-wrap > label { font-size: 13px; }
+.topic-input input { font-size: 20px; }
+.suggestions span, .suggestions button { font-size: 15px; }
+.choice-group > span { font-size: 12px; }
+.choice-group button { font-size: 13px; }
+.experiment-note > span { width: 44px; height: 34px; font-size: 13px; }
+.experiment-note strong { font-size: 16px; }
+.experiment-note small { font-size: 14px; line-height: 1.6; }
+.error-box { font-size: 14px; }
+.generate-button { height: 58px; font-size: 16px; }
+.result-empty strong { font-size: 22px; }
+.result-empty p { font-size: 14px; }
+.result-topline { font-size: 12px; }
+.result-title > span { font-size: 12px; }
+.result-title h3 { font-size: 33px; }
+.result-title p { font-size: 15px; }
+.result-card > div span, .result-card > div b { font-size: 13px; }
+.result-card p { font-size: 15px; }
+.tip-row b { font-size: 13px; }
+.tip-row p { font-size: 14px; }
+.preview-points span { font-size: 14px; }
+.preview-points p { font-size: 15px; }
+.prerequisite b, .thinking-box > b { font-size: 13px; }
+.prerequisite p, .thinking-box p { font-size: 14px; }
+.question-head p { font-size: 15px; }
+.option-grid button, .fill-answer { font-size: 14px; }
+.answer-panel b { font-size: 13px; }
+.answer-panel p { font-size: 13px; }
+.answer-panel span { font-size: 11px; }
+.submit-quiz { font-size: 14px; }
+.quiz-score strong { font-size: 15px; }
+.quiz-score p { font-size: 12px; }
+.mindmap-toolbar span, .mindmap-toolbar button { font-size: 12px; }
+.mindmap-tree { font-size: 15px; }
+.review-tip b { font-size: 13px; }
+.review-tip p { font-size: 14px; }
+.feedback-bar > span { font-size: 12px; }
+.feedback-bar button { font-size: 11px; }
+.section-heading h2 { font-size: 36px; }
+.section-heading > p { font-size: 13px; }
+.history-grid small { font-size: 11px; }
+.history-grid strong { font-size: 15px; }
+.history-grid em { font-size: 11px; }
+.history-empty { font-size: 14px; }
+footer p, footer > span { font-size: 12px; }
+@media (max-width: 620px) {
+  .hero h1 { font-size: 46px; }
+  .hero-subtitle { font-size: 16px; }
+  .task-card strong { font-size: 14px; }
+  .task-card small { font-size: 11px; }
+  .generator-panel h2 { font-size: 31px; }
+  .result-title h3 { font-size: 28px; }
+}
+.mindmap-image-card { margin-bottom: 18px; border: 1px solid var(--line); background: #ffffff; overflow: hidden; }
+.mindmap-image-toolbar { display: flex; align-items: center; justify-content: space-between; padding: 12px 15px; background: #e8f2ff; border-bottom: 1px solid var(--line); }
+.mindmap-image-toolbar > div { display: flex; align-items: center; gap: 8px; color: var(--ink); font-size: 13px; font-weight: 900; }
+.mindmap-image-toolbar button { display: flex; align-items: center; gap: 7px; border: 1px solid var(--ink); background: var(--ink); color: #ffffff; padding: 8px 13px; font-size: 13px; font-weight: 800; cursor: pointer; }
+.mindmap-image-toolbar button:hover { background: var(--coral); border-color: var(--coral); }
+.mindmap-image-toolbar svg { width: 17px; height: 17px; }
+.mindmap-canvas-wrap { width: 100%; overflow: auto; background: #f7fbff; }
+.mindmap-canvas-wrap canvas { display: block; width: 100%; min-width: 760px; height: auto; }
+@media (max-width: 620px) {
+  .mindmap-image-toolbar > div, .mindmap-image-toolbar button { font-size: 12px; }
+  .mindmap-canvas-wrap canvas { min-width: 700px; }
+}
